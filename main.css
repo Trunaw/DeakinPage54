@@ -2,17 +2,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .header {
   display: flex;
   align-items: center;
-  justify-content: start;
-  background-color: #003366; /* Deakin Blue */
+  background-color: #003366;
   color: white;
   padding: 10px 20px;
 }
-.header img {
+.logo {
   height: 50px;
   margin-right: 15px;
 }
@@ -20,13 +19,23 @@ body {
   margin: 0;
   font-size: 24px;
 }
-.main-content {
-  padding: 20px;
+.nav {
+  background-color: darkcyan;
+  text-align: center;
+  padding: 10px 0;
+}
+.nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav a:hover {
+  text-decoration: underline;
 }
 .hero {
-  background-color: #FFD700; /* Deakin Gold accent */
+  background-color: #ffd700;
   padding: 40px;
-  margin-bottom: 20px;
   text-align: center;
 }
 .hero h2 {
@@ -47,36 +56,21 @@ body {
 .quick-links a:hover {
   text-decoration: underline;
 }
-footer.footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-div {
-  background-color: darkcyan;
-  text-align: right;
-}
 #portal {
   background-color: #f5f5f5;
   padding: 30px;
-  border-radius: 10px;
   margin: 30px;
-  font-family: Arial, sans-serif;
+  border-radius: 10px;
 }
 #portal h2 {
   font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
   border-left: 4px solid darkcyan;
   padding-left: 10px;
+  margin-bottom: 20px;
 }
 .feature-list {
-  list-style-type: none;
-  padding-left: 0;
+  list-style: none;
+  padding: 0;
 }
 .feature-list li {
   background-color: white;
@@ -84,9 +78,40 @@ div {
   margin-bottom: 10px;
   border-left: 4px solid darkcyan;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 .feature-list li:hover {
   background-color: #e6f7f7;
-  cursor: pointer;
+}
+.unit-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+.unit-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.unit-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+#about, #security, #fees {
+  padding: 30px;
+  margin: 30px;
+}
+#about h2, #security h2, #fees h2 {
+  font-size: 28px;
+  border-left: 4px solid darkcyan;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.security-list {
+  list-style: disc inside;
+  padding-left: 20px;
+}
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }

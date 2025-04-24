@@ -1,27 +1,38 @@
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Home</title>
-  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-  <!-- Logo & Header -->
-  <div class="header">
-    <img src="logo.svg" alt="Deakin" width="200" height="210" />
+  <!-- Header with Logo -->
+  <header class="header">
+    <img src="logo.svg" alt="Deakin University Logo" class="logo" />
     <h1>SIT223-SIT753 - Professional Practice in IT</h1>
-  </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#unit">Unit Info</a>
+    <a href="#portal">Student Portal</a>
+    <a href="#about">About</a>
+    <a href="#security">Security</a>
+    <a href="#fees">Fees</a>
+  </nav>
 
   <!-- Hero Section -->
-  <div class="main-content">
-    <div class="hero">
-      <h2>Welcome to Deakin University</h2>
-      <p>Explore our programs, news, and events.</p>
-    </div>
-    <div class="quick-links">
-      <a href="#">Programs</a>
-      <a href="#">Admissions</a>
-      <a href="#">News</a>
-      <a href="#">Events</a>
-    </div>
+  <section id="home" class="hero">
+    <h2>Welcome to Deakin University</h2>
+    <p>Explore our programs, news, and events.</p>
+  </section>
+
+  <!-- Quick Links -->
+  <div class="quick-links">
+    <a href="#">Programs</a>
+    <a href="#">Admissions</a>
+    <a href="#">News</a>
+    <a href="#">Events</a>
   </div>
 
   <!-- Student Portal Features -->
@@ -33,6 +44,45 @@
       <li>Course Materials</li>
       <li>Notifications</li>
     </ul>
+  </section>
+
+  <!-- Unit Details Table -->
+  <section id="unit">
+    <h2>Unit Details</h2>
+    <table class="unit-table">
+      <tr><td>Year:</td><td>2023 unit information</td></tr>
+      <tr><td>Enrolment modes:</td><td>Trimester 2: Burwood (Melbourne), Cloud (online)</td></tr>
+      <tr><td>Credit point(s):</td><td>1</td></tr>
+      <tr><td>Unit Chair:</td><td>Trimester 2: Azadeh Ghari Neiat</td></tr>
+      <tr><td>Scheduled Learning Activities:</td><td>1 x 3 hour active class per week, weekly drop-in support</td></tr>
+    </table>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About This Unit</h2>
+    <p>
+      To be successful IT graduates need to understand the use of industry tools and practices,
+      the ways these tools work and connect together, and the underlying professional, ethical,
+      and teamwork knowledge and skills needed to put these into practice in a professional manner.
+    </p>
+  </section>
+
+  <!-- Security Section -->
+  <section id="security">
+    <h2>Authentication & Security</h2>
+    <ul class="security-list">
+      <li>OAuth 2.0 – Secure token-based authentication</li>
+      <li>Two-Factor Authentication (2FA) – Adds an extra layer of security</li>
+      <li>Password hashing using bcrypt – Protect stored passwords</li>
+      <li>Evaluate security strengths and weaknesses – Analyze benefits of each method</li>
+    </ul>
+  </section>
+
+  <!-- Fees Section -->
+  <section id="fees">
+    <h2>Fees & Enrolment</h2>
+    <a href="https://www.deakin.edu.au/students/enrolment-and-fees/fees" target="_blank">View Current Students Fees</a>
   </section>
 
   <!-- Footer -->
