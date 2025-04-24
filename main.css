@@ -20,3 +20,38 @@ div {
   text-align: right; 
   }
 
+  #portal {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #portal h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    border-left: 4px solid darkcyan;
+    padding-left: 10px;
+  }
+  
+  .feature-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .feature-list li {
+    background-color: white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid darkcyan;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .feature-list li:hover {
+    background-color: #e6f7f7;
+    cursor: pointer;
+  }
+  
