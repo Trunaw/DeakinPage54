@@ -5,26 +5,65 @@
 <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
 </head>
 <body>
-<h1>SIT223-SIT753 - Professional Practice in IT</h1>
-<h2> Unit details</h2>
-<table style="width:100%">
- <tr>
- <td>Year: </td>
- <td>2023 unit information</td>
- </tr>
- <tr>
- <td>Enrolment modes:</td>
- <td>Trimester 1: Burwood (Melbourne), Geelong, Cloud (online)</td>
- </tr>
- <tr>
- <td>Credit point(s):</td>
- <td>1</td>
- </tr>
- <tr>
- <td> Unit Chair:</td>
- <td> Trimester 1: Azadeh Ghari Neiat</td>
- </tr>
-</table>
+    <div class="header">
+        <img src="logo.svg" alt="Deakin University Logo">
+        <span>Welcome, [Student Name]</span>
+        <button class="logout">Logout</button>
+    </div>
+    <div class="sidebar">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#courses">Courses</a>
+        <a href="#grades">Grades</a>
+        <a href="#notifications">Notifications</a>
+        <a href="#search">Search</a>
+    </div>
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for course materials...">
+        </div>
+        <div id="dashboard" class="content-section">
+            <h2>Dashboard</h2>
+            <p>Overview of current courses, upcoming deadlines, and recent notifications.</p>
+        </div>
+        <div id="courses" class="content-section">
+            <h2>Courses</h2>
+            <ul>
+                <li><a href="#">Course 1: Materials</a></li>
+                <li><a href="#">Course 2: Materials</a></li>
+            </ul>
+        </div>
+        <div id="grades" class="content-section">
+            <h2>Grades</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>Course 1</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Course 2</td>
+                    <td>B</td>
+                </tr>
+            </table>
+        </div>
+        <div id="notifications" class="content-section">
+            <h2>Notifications</h2>
+            <ul>
+                <li>New materials available for Course 1</li>
+                <li>Grade updated for Course 2</li>
+            </ul>
+        </div>
+        <div id="search" class="content-section">
+            <h2>Search Results</h2>
+            <p>Results for your search query will appear here.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">Help</a> | <a href="#">Support</a> | <a href="#">Contact Us</a>
+    </div>
 </body>
 </html>
 
